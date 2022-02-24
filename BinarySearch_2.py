@@ -23,3 +23,13 @@ def BinarySearchIterative(arr,l,r,x):
         else:
 
             l = mid + 1
+    
+    #if it reaches here, it means after running the whole while loop, it didnt find the element in the list
+
+    return -1
+
+#driver code
+
+arr = [2,3,4,10,40]
+
+x= 10 

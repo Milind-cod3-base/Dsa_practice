@@ -36,4 +36,10 @@ x = 10
 
 result = BinarySearch(arr,0, len(arr)-1 , x)   #function is called and values given in the variable
 
+#checking the result and printing results
 
+if result != -1:
+    print('Element is present at index %d' %result)
+
+else:
+    print('Element is not in the list')

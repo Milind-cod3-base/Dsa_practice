@@ -31,3 +31,9 @@ def BinarySearch(arr,l,r,x):   #where x is th target value and l is the leftmost
 
 arr = [2,3,4,10,40]
 x = 10  
+
+#function call
+
+result = BinarySearch(arr,0, len(arr)-1 , x)   #function is called and values given in the variable
+
+

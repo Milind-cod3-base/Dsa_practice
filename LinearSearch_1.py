@@ -13,5 +13,9 @@ def LinearSearch(arr,x):    #defining a function with arr and x as parameters. x
 arr = [2,3,4,10,40]
 x = 10
 
+#making it ready to print
+
+result = LinearSearch(arr,x)   #saving the function in a variable and saving the print values there
+
 
     

@@ -18,4 +18,13 @@ x = 10
 result = LinearSearch(arr,x)   #saving the function in a variable and saving the print values there
 
 
+#print the conclusion whatever the result comes
+
+if result == -1:
+    print('The target is not in the list')
+
+else:
+
+    print('The target is at %d position in the list' % result)
+
     

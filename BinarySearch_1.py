@@ -12,3 +12,9 @@ def BinarySearch(arr,l,r,x):   #where x is th target value and l is the leftmost
         #if element is present at the middle
         if arr[mid] == x:
             return mid
+
+        #if element is greater than the middle, than it is present on the right sub-array
+
+        if arr[mid] <x:
+            return BinarySearch(arr, mid+1,r,x)   #right recursion created
+        

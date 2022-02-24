@@ -31,3 +31,19 @@ def JumpSearch(arr,x,n):
             return prev
 
         return -1
+
+#Driver code to test
+
+arr = [ 0, 1, 1, 2, 3, 5, 8, 13, 21,
+    34, 55, 89, 144, 233, 377, 610 ]
+
+x = 55
+n = len(arr)
+
+#find index of x using jumpsearch
+
+index = JumpSearch(arr,x,n)
+
+#print the index where 'x' is located
+
+print("Number %d is at index %d" %(x, index))

@@ -22,3 +22,6 @@ def BinarySearch(arr,l,r,x):   #where x is th target value and l is the leftmost
 
         else:
             return BinarySearch(arr,l,mid-1,x)          #left recursion created
+
+    else:
+        return -1     #it means element is not inside the array

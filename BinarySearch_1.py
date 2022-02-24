@@ -18,3 +18,7 @@ def BinarySearch(arr,l,r,x):   #where x is th target value and l is the leftmost
         if arr[mid] <x:
             return BinarySearch(arr, mid+1,r,x)   #right recursion created
         
+        #if element is less than the middle, we go to the left sub array only
+
+        else:
+            return BinarySearch(arr,l,mid-1,x)          #left recursion created

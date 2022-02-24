@@ -8,3 +8,10 @@ def LinearSearch(arr,x):    #defining a function with arr and x as parameters. x
     else:
         return -1
     
+#driver code
+
+arr = [2,3,4,10,40]
+x = 10
+
+
+    

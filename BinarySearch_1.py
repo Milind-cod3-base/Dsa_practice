@@ -8,4 +8,7 @@ def BinarySearch(arr,l,r,x):   #where x is th target value and l is the leftmost
 
     if r>=1:
         mid = l + (r-1) //2
-        
+
+        #if element is present at the middle
+        if arr[mid] == x:
+            return mid

@@ -25,3 +25,9 @@ def BinarySearch(arr,l,r,x):   #where x is th target value and l is the leftmost
 
     else:
         return -1     #it means element is not inside the array
+
+
+#time to write the driver code
+
+arr = [2,3,4,10,40]
+x = 10  

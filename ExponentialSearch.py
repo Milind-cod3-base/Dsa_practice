@@ -20,3 +20,21 @@ def BinarySearch(arr,l,r,x):
     
     return -1
 
+def exponentialSearch(arr,n,x):
+
+    if arr[0]==x:
+        return 0    #if element is present at the first location
+    
+
+    #find range for binary search, i is doubled at every iteration
+
+    i = 1
+
+    while i<n and arr[i] <=x:
+        i = i*2
+    
+    #after getting a range, which is between i//2 and i, its good to use a binary search
+
+    return BinarySearch(arr,i // 2, min(i,n-1),x) #as i could cross the range of list (as it is doubled everytime), minimum of last element and i is taken. Which comes first.
+
+    

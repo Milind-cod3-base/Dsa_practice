@@ -24,3 +24,13 @@ def interpolationSearch(arr, lo, hi,x):
             return interpolationSearch(arr,lo,pos-1,x)
 
     return -1
+
+#writting driver code
+
+arr = [10,12,13,16,18,19,20,21,22,23,24,33,42,47]  #array of items in which search is to be conducted
+
+n = len(arr)
+
+x = 18   #element to be searched
+
+index = interpolationSearch(arr,0,n-1,x)  #index to be found of the element

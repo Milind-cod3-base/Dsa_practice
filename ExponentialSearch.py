@@ -14,7 +14,7 @@ def BinarySearch(arr,l,r,x):
 
         if arr[mid] > x:
             #if element is smaller than the mid element
-            return BinarySearch(arr,l,mid-1,x):
+            return BinarySearch(arr,l,mid-1,x)
 
         return BinarySearch(arr,mid+1,r,x)    #else it can be only on the right side
     
@@ -45,3 +45,11 @@ n = len(arr)
 x = 10  #target to be found in the list
 
 result = exponentialSearch(arr,n,x)
+
+#printing the if result
+
+if result == -1:
+    print("Element not found in the array")
+
+else:
+    print("Element is present at index %d" %result)

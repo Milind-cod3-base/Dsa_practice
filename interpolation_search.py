@@ -34,3 +34,10 @@ n = len(arr)
 x = 18   #element to be searched
 
 index = interpolationSearch(arr,0,n-1,x)  #index to be found of the element
+
+#putting printing condition
+
+if index != -1:
+    print("Element found at index %s" % index)
+else:
+    print("Element not found")

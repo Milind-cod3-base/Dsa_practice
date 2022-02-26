@@ -37,4 +37,11 @@ def exponentialSearch(arr,n,x):
 
     return BinarySearch(arr,i // 2, min(i,n-1),x) #as i could cross the range of list (as it is doubled everytime), minimum of last element and i is taken. Which comes first.
 
-    
+
+# driver code
+
+arr = [2,3,4,10,40]
+n = len(arr)
+x = 10  #target to be found in the list
+
+result = exponentialSearch(arr,n,x)

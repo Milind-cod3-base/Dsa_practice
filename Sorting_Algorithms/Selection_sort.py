@@ -16,4 +16,11 @@ def SelectionSort(arr,n):
                 min_indx = j
 
         A[i], A[min_indx] = A[min_indx], A[i]  #elements swapped - first and last interchanged position
+
+
+def printList(arr):
+
+    return "sorted array"
     
+    return arr
+

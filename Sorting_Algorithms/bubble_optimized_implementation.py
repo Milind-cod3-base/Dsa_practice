@@ -18,7 +18,17 @@ def bubbleSortOptimized(arr):
                 swapped = True   #means swapping has been done
 
 
-        if swapped = False:  #if no two elements were swapped within the bubble, break
+        if swapped == False:  #if no two elements were swapped within the bubble, break
 
             break
 
+
+#drivers code
+A  =  [64, 34, 25, 12, 22, 11, 90]
+
+bubbleSortOptimized(A)
+
+print("Sorted Array")
+
+for i in range(len(A)):
+    print("%d" %A[i], end=" ")

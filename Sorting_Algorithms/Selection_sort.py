@@ -12,8 +12,23 @@ def SelectionSort(arr,n):
 
         for j in range(i+1,n):   #a for loop to check in the rest of the subarray
             
-            if A[min_indx] > A[j]:
+            if arr[min_indx] > arr[j]:
                 min_indx = j
 
-        A[i], A[min_indx] = A[min_indx], A[i]  #elements swapped - first and last interchanged position
+        arr[i], arr[min_indx] = arr[min_indx], arr[i]  #elements swapped - first and last interchanged position
     
+    return arr  #bug fixed
+    
+
+
+#drivers code written
+
+arr = [63,22,43,11,12]     
+
+n = len(arr)
+
+A2 = SelectionSort(arr,n)
+
+print(A2)   #printing of selection sorted array donne
+
+

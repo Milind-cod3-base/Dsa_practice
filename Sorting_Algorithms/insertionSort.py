@@ -21,4 +21,10 @@ arr = [12,11,13,5,6]
 
 insertionSort(arr)
 
+#printing the sorted array
+
+for i in range(len(arr)):
+
+    print("%d" %arr[i], end=",")
+
 

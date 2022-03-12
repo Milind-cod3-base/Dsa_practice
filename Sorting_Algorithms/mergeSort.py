@@ -45,6 +45,14 @@ def mergeSort(arr):
 
             j+=1
             k+=1
-            
 
 
+
+#code to print the list
+
+def printList(arr):
+
+    for i in range(len(arr)):
+        print(arr[i], end=" ")
+    
+    print()

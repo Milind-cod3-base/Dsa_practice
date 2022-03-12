@@ -35,7 +35,7 @@ def mergeSort(arr):
 
         #checking if element is left
         while i < len(L):
-            arr[k] = R[j]
+            arr[k] = L[i]
 
             i +=1
             k +=1
@@ -56,3 +56,16 @@ def printList(arr):
         print(arr[i], end=" ")
     
     print()
+
+
+# Driver's code
+
+if __name__ == '__main__':
+
+    arr = [12,11,13,5,6,7]
+    print("Given  array is", end="\n")
+    printList(arr)
+    mergeSort(arr)
+    print("Sorted array is:", end="\n")
+
+    printList(arr)

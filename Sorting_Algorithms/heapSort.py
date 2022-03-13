@@ -50,3 +50,9 @@ def heapSort(arr):
         heapify(arr, i, 0)
 
 
+# Driver's code
+
+arr = [12, 11, 13, 5, 6, 7]
+heapSort(arr)
+n = len(arr)
+print("Sorted array is")

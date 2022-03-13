@@ -32,3 +32,21 @@ def heapify(arr,n,i):
 
         # heapify the root
         heapify(arr, n , largest)
+
+
+#main funcion to sort an array of given size
+def heapSort(arr):
+
+    n = len(arr)
+
+    #build a maxHeap
+    for i in range(n//2 - 1, -1, -1): #going in reverse
+        heapify(arr, n, i)
+
+    #one by one extracting the number/elements in decending order
+
+    for i in range(n-1,0, -1):
+        arr[i],arr[0] = arr[0], arr[i]  #swapping first and last element of sorted heap
+        heapify(arr, i, 0)
+
+

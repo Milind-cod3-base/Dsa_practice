@@ -51,4 +51,8 @@ def quick_sort(start, end, array):
 
 array = [ 10, 7, 8, 9, 1, 5 ]
 quick_sort(0, len(array) -1 , array)
- 
+
+# Printing sorted array using f-string which is newly introduced in Python 3.6
+
+print(f'Sorted array: {array}') # here due to f-string, {array} becomes replaceable. It increases more readability.
+

@@ -29,3 +29,19 @@ def partition(start, end, array):
     array[end], array[pivot_index] = array[pivot_index], array[end]
 
     return end     # Returning end pointer to divide the array into 2
+
+
+# The main function which implements the Quick Sort algorithm
+
+def quick_sort(start, end, array):
+
+    if (start < end):
+
+        # p is partitioning index, array[p] is at right place
+
+        p = partition(start, end, array)
+
+        # Sort elements before partition and after partition
+        quick_sort(start, p -1, array)
+        quick_sort(p+1 , end, array)      # Recursive function calling
+         

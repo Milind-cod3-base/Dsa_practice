@@ -55,4 +55,7 @@ def radixSort(arr):
 
         exp *= 10
 
-        
+
+# Driver's code
+arr = [170, 45, 75, 90, 802, 24, 2, 66]
+

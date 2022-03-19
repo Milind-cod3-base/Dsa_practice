@@ -59,3 +59,9 @@ def radixSort(arr):
 # Driver's code
 arr = [170, 45, 75, 90, 802, 24, 2, 66]
 
+
+# Function call
+radixSort(arr)
+
+for i in range(len(arr)):
+    print(arr[i], end = " ")

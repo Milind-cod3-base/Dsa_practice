@@ -38,3 +38,21 @@ def countingSort(arr,exp1):
     i = 0
     for i in range(0, len(arr)):
         arr[i] = output[i]
+
+
+# Method to do Radix sort
+
+def radixSort(arr):
+
+    # Find the maximum number to know number of digits
+    max1 = max(arr)
+
+    # Do counting sort for every digit(as a subroutine), Note that instead of passing digit number, exp is passed, exp is 10^i where i is the current digit number
+
+    exp =1 
+    while max1 / exp> 1:
+        countingSort(arr,exp)
+
+        exp *= 10
+
+        

@@ -4,7 +4,7 @@
 
 # The main function that sort the given string arr[] in alphabetical order
 
-def countSort(arr):]
+def countSort(arr):
 
     # The output character array that will have sorted arr
     output = [0 for i in range(len(arr))]
@@ -28,10 +28,16 @@ def countSort(arr):]
     # Build the output character array
     for i in range(len(arr)):
         output[count[ord(arr[i])]-1] = arr[i]
-        count[ord(arr[i]))]  -= 1
+        count[ord(arr[i])]  -= 1
 
     # Copy the output array to arr, so that arr now
     # contains sorted characters
     for i in range(len(arr)):
         ans[i] = output[i]
     return ans
+
+
+# Driver's program to run the above function
+arr = "whatisupguyswhatchoutIamcodinghere"
+ans  = countSort(arr)
+print("Sorted character array is % s" %("".join(ans)))
